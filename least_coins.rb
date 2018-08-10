@@ -10,7 +10,11 @@ def least_coins(cents)
 coins = {
   :quarters => 0,
   :dimes => 0,
+<<<<<<< HEAD
   :nickels => 0,
+=======
+  :nickles => 0,
+>>>>>>> ed0be99fe2b3c06e720cf0b8fb93f2197dcf642c
   :pennies => 0
 }
 
@@ -30,11 +34,19 @@ elsif dimes != 0
   cents = cents - dimes * 10
 end
 
+<<<<<<< HEAD
 nickels = cents/5
 if nickels == 0
   coins[:nickels] = 0
 elsif nickels != 0
   coins[:nickels] = nickels
+=======
+nickles = cents/5
+if nickels == 0
+  coins[:nickels] = 0
+elsif nickels != 0
+  coins[:nickles] = nickles
+>>>>>>> ed0be99fe2b3c06e720cf0b8fb93f2197dcf642c
   cents = cents - coins * 5
 end
 
